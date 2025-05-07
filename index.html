@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- --------- UNICONS ---------- -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+    />
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- --------- FAVICON ---------- -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <title>Portfolio | Jaiver Criado</title>
+  </head>
+  <body>
+    <!-- --------------- HEADER --------------- -->
+    <nav id="header">
+      <a href="#home">
+        <div class="nav-logo">
+          <p class="nav-name" style="text-decoration: none">Jaiver</p>
+          <span>.</span>
+        </div>
+      </a>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list" id="nav-links">
+          <li class="nav_list">
+            <a href="#home" class="nav-link active-link">Hola</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#projects" class="nav-link">Proyectos</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#experience" class="nav-link">Experiencia</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#about" class="nav-link">Sobre Mí</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#contact" class="nav-link">Contáctame</a>
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <a
+          target="_blank"
+          href="https://drive.google.com/file/d/1g_NbxkpTDGVssKKsw4Qweyepi5cGm1W8/view?usp=drive_link"
+          class="btn"
+        >
+          Descargar CV <i class="uil uil-file-alt"></i>
+        </a>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+      <!-- -------------- FEATURED BOX ---------------- -->
+      <section class="featured-box" id="home">
+        <div class="featured-text">
+          <div class="featured-text-card">
+            <span>Jaiver Criado</span>
+          </div>
+          <div class="featured-name">
+            <p>Soy <span class="typedText"></span></p>
+          </div>
+          <div class="featured-text-info">
+            <p>
+              Desarrollador frontend experimentado con pasión por crear sitios
+              web visualmente impactantes y fáciles de usar.
+            </p>
+          </div>
+          <div class="featured-text-btn">
+            <a href="#projects" class="btn blue-btn">Ver mi Portfolio</a>
+            <a target="_blank" href="https://wa.link/bgsggm" class="btn">
+              Trabajemos juntos <i class="uil uil-file-alt"></i>
+            </a>
+          </div>
+          <div class="social_icons">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/jaiver18?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              ><div class="icon"><i class="uil uil-instagram"></i></div
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/jaiver-orlando-criado-arias-9ba704177/"
+              ><div class="icon"><i class="uil uil-linkedin-alt"></i></div
+            ></a>
+            <a target="_blank" href="https://github.com/JaiverCriado"
+              ><div class="icon"><i class="uil uil-github-alt"></i></div
+            ></a>
+          </div>
+        </div>
+        <div class="featured-image">
+          <div class="image">
+            <img src="assets/images/avatar-jc.jpg" alt="avatar" />
+          </div>
+        </div>
+        <div class="scroll-icon-box">
+          <a href="#projects" class="scroll-btn">
+            <i class="uil uil-mouse-alt"></i>
+            <p>Desliza abajo</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- -------------- PROJECT BOX ---------------- -->
+      <section class="section" id="projects">
+        <h1 class="section__header">Proyectos</h1>
+        <p class="section__description">
+          Explora una muestra de mis diversos proyectos, que demuestran mis
+          habilidades en desarrollo web, diseño y más. Cada proyecto refleja mi
+          pasión por crear experiencias digitales impactantes e innovadoras.
+        </p>
+
+        <div class="portfolio-header">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Todo</button>
+            <button class="filter-btn" data-filter="websites">
+              Sitios Web
+            </button>
+            <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
+            <button class="filter-btn" data-filter="logo">Logos</button>
+            <button class="filter-btn" data-filter="multimedia">
+              Audiovisual
+            </button>
+          </div>
+        </div>
+        <div class="portfolio-grid">
+          <!-- Web Sites Item -->
+          <div class="portfolio-item" data-category="websites">
+            <div class="portfolio-img">
+              <a target="_blank" href="https://autotechfunding.com/"
+                ><img
+                  src="/assets/images/websites/autotechfunding.jpg"
+                  alt="Auto Tech Funding"
+              /></a>
+              <div class="tag">Sitios Web</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Auto Tech Funding</h3>
+              <p class="portfolio-desc">
+                Landing Rent Car – Inversión Americana<br /><br />
+                Landing page enfocada en visualización corporativa y catálogo
+                vehicular para inversores. Estructura UI optimizada con fichas
+                dinámicas por modelo, tipo y retorno estimado. Navegación clara,
+                enfoque en conversión y toma de decisión ágil.
+              </p>
+              <a
+                target="_blank"
+                href="https://autotechfunding.com/"
+                class="show-more"
+                >Ver proyecto</a
+              >
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="websites">
+            <div class="portfolio-img">
+              <a target="_blank" href="https://inse.com.co/"
+                ><img
+                  src="/assets/images/websites/inse-group.jpg"
+                  alt="Inse Group"
+              /></a>
+              <div class="tag">Sitios Web</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Inse Group</h3>
+              <p class="portfolio-desc">
+                Landing Compañía Minera<br /><br />
+                Sitio web para Compañía Minera. Rediseño con mejor optimización
+                de carga, buscador por categorías de productos y formularios
+                integrados. Enfocada en conversión, servicios y operaciones
+                clave. Se Diseño enfocado en conversión y claridad operativa.
+                Optimizada para SEO y móviles.
+              </p>
+              <a target="_blank" href="https://inse.com.co/" class="show-more"
+                >Ver proyecto</a
+              >
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="websites">
+            <div class="portfolio-img">
+              <a target="_blank" href="https://homespapty.net/"
+                ><img
+                  src="/assets/images/websites/home-spa.jpg"
+                  alt="Home & Spa"
+              /></a>
+              <div class="tag">Sitios Web</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Home & Spa Panamá</h3>
+              <p class="portfolio-desc">
+                Landing Spa<br /><br />
+                Este proyecto consistió en la creación de un sitio web
+                responsivo para un spa boutique. El desarrollo se realizó en
+                WordPress, utilizando un tema personalizado basado en
+                GeneratePress para garantizar ligereza, velocidad de carga y una
+                estructura SEO-friendly.
+              </p>
+              <a
+                target="_blank"
+                href="https://homespapty.net/"
+                class="show-more"
+                >Ver proyecto</a
+              >
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="websites">
+            <div class="portfolio-img">
+              <a target="_blank" href="https://uanorte.edu.co/web/"
+                ><img src="/assets/images/websites/uanorte.jpg" alt="UAnorte"
+              /></a>
+              <div class="tag">Sitios Web</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">UAnorte</h3>
+              <p class="portfolio-desc">
+                Landing page para corporación universitaria<br /><br />
+                Página institucional enfocada en la captación de estudiantes,
+                con diseño responsive, SEO, formularios integrados y analítica
+                web, respetando la identidad visual de la institución.
+              </p>
+              <a
+                target="_blank"
+                href="https://uanorte.edu.co/web/"
+                class="show-more"
+                >Ver proyecto</a
+              >
+            </div>
+          </div>
+
+          <!-- UI/UX Item -->
+          <div class="portfolio-item" data-category="ui-ux">
+            <div class="portfolio-img">
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/ewEHaF7fLR5tILHVC6e3uz/DecodeBlock?node-id=1-12&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A12"
+                ><img
+                  src="/assets/images/ux-ui/decodeblock.jpg"
+                  alt="DecodeBlock"
+              /></a>
+              <div class="tag">UI/UX</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">DecodeBlock</h3>
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/ewEHaF7fLR5tILHVC6e3uz/DecodeBlock?node-id=1-12&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A12"
+                class="show-more"
+                >Ver proyecto</a
+              >
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="ui-ux">
+            <div class="portfolio-img">
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/xEHXoSfs4bNo7eb0LTkiTV/MetaGiros?node-id=149-1478&scaling=min-zoom&page-id=149%3A1477"
+                ><img
+                  src="/assets/images/ux-ui/metadollar.jpg"
+                  alt="MetaDollar"
+              /></a>
+              <div class="tag">UI/UX</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">MetaDollar</h3>
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/xEHXoSfs4bNo7eb0LTkiTV/MetaGiros?node-id=149-1478&scaling=min-zoom&page-id=149%3A1477"
+                class="show-more"
+                >Ver proyecto</a
+              >
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="ui-ux">
+            <div class="portfolio-img">
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/q8sNlEct4NCMNsM6RABPvd/Binomiales?node-id=406-3298&scaling=min-zoom&page-id=4%3A2&starting-point-node-id=406%3A3298"
+                ><img
+                  src="/assets/images/ux-ui/binomiales-daap.jpg"
+                  alt="Binomiales daap"
+              /></a>
+              <div class="tag">UI/UX</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Binomiales Dashboard</h3>
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/q8sNlEct4NCMNsM6RABPvd/Binomiales?node-id=406-3298&scaling=min-zoom&page-id=4%3A2&starting-point-node-id=406%3A3298"
+                class="show-more"
+                >Ver proyecto</a
+              >
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="ui-ux">
+            <div class="portfolio-img">
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/q8sNlEct4NCMNsM6RABPvd/Binomiales?node-id=231-1946&scaling=min-zoom&page-id=215%3A1931&starting-point-node-id=231%3A1946"
+                ><img
+                  src="/assets/images/ux-ui/binomiales-landing.jpg"
+                  alt="Binomiales landing"
+              /></a>
+              <div class="tag">UI/UX</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Binomiales Landing</h3>
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/q8sNlEct4NCMNsM6RABPvd/Binomiales?node-id=231-1946&scaling=min-zoom&page-id=215%3A1931&starting-point-node-id=231%3A1946"
+                class="show-more"
+                >Ver proyecto</a
+              >
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="ui-ux">
+            <div class="portfolio-img">
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/NggjdbKQRm9yJlREzghgeI/Tangle?node-id=1-409&scaling=min-zoom&page-id=1%3A408"
+                ><img src="/assets/images/ux-ui/tangle.jpg" alt="Tangle"
+              /></a>
+              <div class="tag">UI/UX</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Tangle</h3>
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/NggjdbKQRm9yJlREzghgeI/Tangle?node-id=1-409&scaling=min-zoom&page-id=1%3A408"
+                class="show-more"
+                >Ver proyecto</a
+              >
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="ui-ux">
+            <div class="portfolio-img">
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/c19CjlqjTBHrleoiIQh1iX/Landing-BoosterBlock?page-id=0%3A1&type=design&node-id=1-2&viewport=131%2C127%2C0.15&t=fePn4u852Ixgq9Bg-1&scaling=min-zoom&starting-point-node-id=1%3A2"
+                ><img
+                  src="/assets/images/ux-ui/boosterblock.jpg"
+                  alt="boosterblock"
+              /></a>
+              <div class="tag">UI/UX</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">BoosterBlock</h3>
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/c19CjlqjTBHrleoiIQh1iX/Landing-BoosterBlock?page-id=0%3A1&type=design&node-id=1-2&viewport=131%2C127%2C0.15&t=fePn4u852Ixgq9Bg-1&scaling=min-zoom&starting-point-node-id=1%3A2"
+                class="show-more"
+                >Ver proyecto</a
+              >
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="ui-ux">
+            <div class="portfolio-img">
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/3psvFi0xYcsjy59KdqEFOD/Screens-Indexa?page-id=0%3A1&type=design&node-id=1-2&viewport=94%2C180%2C0.12&t=fXCiirxnMAMpZFLK-1&scaling=min-zoom&starting-point-node-id=1%3A2"
+                ><img src="/assets/images/ux-ui/invexa.jpg" alt="invexa"
+              /></a>
+              <div class="tag">UI/UX</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Invexa</h3>
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/3psvFi0xYcsjy59KdqEFOD/Screens-Indexa?page-id=0%3A1&type=design&node-id=1-2&viewport=94%2C180%2C0.12&t=fXCiirxnMAMpZFLK-1&scaling=min-zoom&starting-point-node-id=1%3A2"
+                class="show-more"
+                >Ver proyecto</a
+              >
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="ui-ux">
+            <div class="portfolio-img">
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/KueGPgzbmkZwgCLvoKjxxl/IA-Money?page-id=65%3A999&type=design&node-id=65-1000&viewport=47%2C325%2C0.06&t=AUunI0dEPHPSxiPO-1&scaling=contain&starting-point-node-id=65%3A1000"
+                ><img src="/assets/images/ux-ui/iamoney.jpg" alt="iamoney"
+              /></a>
+              <div class="tag">UI/UX</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">IA Money</h3>
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/KueGPgzbmkZwgCLvoKjxxl/IA-Money?page-id=65%3A999&type=design&node-id=65-1000&viewport=47%2C325%2C0.06&t=AUunI0dEPHPSxiPO-1&scaling=contain&starting-point-node-id=65%3A1000"
+                class="show-more"
+                >Ver proyecto</a
+              >
+            </div>
+          </div>
+
+          <!-- Logos Item -->
+          <div class="portfolio-item" data-category="logo">
+            <div class="portfolio-img">
+              <img
+                src="/assets/images/logos/psi-naty-meneses.jpg"
+                alt="logo nm"
+              />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Psicóloga Nathaly Meneses</h3>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="logo">
+            <div class="portfolio-img">
+              <img src="/assets/images/logos/jamax.jpg" alt="jamax" />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">JAMAX Agency</h3>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="logo">
+            <div class="portfolio-img">
+              <img
+                src="/assets/images/logos/jc-productions.jpg"
+                alt="jc-productions"
+              />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">JC Productions</h3>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="logo">
+            <div class="portfolio-img">
+              <img
+                src="/assets/images/logos/eterno-amor.jpg"
+                alt="eterno-amor"
+              />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Eterno Amor</h3>
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="logo">
+            <div class="portfolio-img">
+              <img src="/assets/images/logos/fourbrost.jpg" alt="fourbrost" />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">FourBrost</h3>
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="logo">
+            <div class="portfolio-img">
+              <img src="/assets/images/logos/mr-homero.jpg" alt="mr-homero" />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Mr Homero</h3>
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="logo">
+            <div class="portfolio-img">
+              <img
+                src="/assets/images/logos/eclat-store.jpg"
+                alt="eclat-store"
+              />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Eclat Store</h3>
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="logo">
+            <div class="portfolio-img">
+              <img
+                src="/assets/images/logos/boosterblock.jpg"
+                alt="boosterblock"
+              />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">BoosterBlock</h3>
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="logo">
+            <div class="portfolio-img">
+              <img src="/assets/images/logos/binomiales.jpg" alt="binomiales" />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Binomiales</h3>
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="logo">
+            <div class="portfolio-img">
+              <img src="/assets/images/logos/iamoney.jpg" alt="iamoney" />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">IA Money</h3>
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="logo">
+            <div class="portfolio-img">
+              <img src="/assets/images/logos/invexa.jpg" alt="invexa" />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Invexa</h3>
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="logo">
+            <div class="portfolio-img">
+              <img src="/assets/images/logos/metagiros.jpg" alt="metagiros" />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Metagiros</h3>
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="logo">
+            <div class="portfolio-img">
+              <img src="/assets/images/logos/moneyland.jpg" alt="moneyland" />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Moneyland</h3>
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="logo">
+            <div class="portfolio-img">
+              <img src="/assets/images/logos/tangle.jpg" alt="tangle" />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Tangle</h3>
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="logo">
+            <div class="portfolio-img">
+              <img
+                src="/assets/images/logos/trading-capital.jpg"
+                alt="trading-capital"
+              />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Trading Capital</h3>
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="logo">
+            <div class="portfolio-img">
+              <img
+                src="/assets/images/logos/universe-bnb.jpg"
+                alt="universe-bnb"
+              />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Universe-BNB</h3>
+            </div>
+          </div>
+
+          <!-- Web App Item (Hidden Initially) -->
+          <div class="portfolio-item hidden-project" data-category="logo">
+            <div class="portfolio-img">
+              <img src="/assets/images/logos/xigny.jpg" alt="xigny" />
+              <div class="tag">Logo</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Xigny</h3>
+            </div>
+          </div>
+
+          <!-- Audiovisual Item -->
+          <div class="portfolio-item" data-category="multimedia">
+            <div class="portfolio-img">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UC3cxmesKlwjzkxo7uyzGKXg/featured"
+                ><img src="/assets/images/multimedia.jpg" alt="Multimedia"
+              /></a>
+              <div class="tag">Audiovisual</div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Material Audiovisual</h3>
+              <p class="portfolio-desc">
+                ¡Explora aquí el material audiovisual del canal de YouTube!
+                Encontrarás videos destacados que complementan y enriquecen cada
+                proyecto del portafolio.
+              </p>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UC3cxmesKlwjzkxo7uyzGKXg/featured"
+                class="show-more"
+                >Ver proyecto</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="load-more-container">
+          <button class="load-more-btn">Ver más proyectos</button>
+        </div>
+      </section>
+
+      <!-- -------------- EXPERIENCE ---------------- -->
+      <section class="section" id="experience">
+        <h1 class="section__header">Experiencia</h1>
+        <div class="timeline">
+          <div class="timeline-item" id="item1">
+            <div class="circlet"></div>
+            <div class="date">ACTUALIDAD - 2025</div>
+            <div class="company">Freelancer</div>
+            <div class="job-title">
+              Diseñador UX/UI - Developer Frontend - Remoto
+            </div>
+            <div class="location">Cúcuta, Colombia</div>
+            <div class="description">
+              Desarrollo y diseño de plataformas web
+            </div>
+            <ul class="responsibilities">
+              <li>
+                <strong>Auto Tech Funding</strong>, landing page
+                autoadministrable, hecha con Wordpress - Html - CSS - JavaScript
+              </li>
+              <li>
+                <strong>Inse Group</strong>, landing page autoadministrable,
+                hecha con Wordpress - Html - CSS - JavaScript
+              </li>
+              <li>
+                <strong>decodeblock</strong>, Diseño UX/UI de plataformas web,
+                hecha con Figma - Photoshop - Illustrator
+              </li>
+            </ul>
+          </div>
+
+          <div class="timeline-item" id="item2">
+            <div class="circlet"></div>
+            <div class="date">AGOSTO 2024</div>
+            <div class="company">Doing Safe Business S.A.S</div>
+            <div class="job-title">
+              Diseñador UX/UI - Developer Frontend - Remoto
+            </div>
+            <div class="location">Cúcuta, Colombia</div>
+            <div class="description">
+              Plataforma de pagos y juegos de suerte y azar
+            </div>
+            <ul class="responsibilities">
+              <li>
+                Realizar entendimiento con el usuario de los requerimientos en
+                el cual se analiza el funcionamiento y comportamiento de la
+                misma.
+              </li>
+              <li>
+                Crear prototipos interactivos para pruebas y presentaciones.
+              </li>
+              <li>Diseñar la apariencia visual de la interfaz.</li>
+              <li>
+                Hacer ajustes basados en las limitaciones técnicas y feedback
+                del equipo de desarrollo.
+              </li>
+              <li>
+                Convertir diseños de UX/UI en código HTML, CSS y JavaScript.
+              </li>
+            </ul>
+          </div>
+
+          <div class="timeline-item" id="item3">
+            <div class="circlet"></div>
+            <div class="date">SEPTIEMBRE 2024</div>
+            <div class="company">Corprodinco</div>
+            <div class="job-title">
+              Docente de Fundamentos de Hardware y Software l & ll - Diseño y
+              Desarrollo Web - Presencial
+            </div>
+            <div class="location">Cúcuta, Colombia</div>
+            <div class="description">Corporación Universitaria</div>
+            <ul class="responsibilities">
+              <li>
+                Introduje herramientas digitales interactivas en el aula,
+                mejorando la participación y el aprendizaje de los estudiantes.
+              </li>
+              <li>
+                Coordiné talleres extracurriculares sobre los conocimientos y
+                bases necesarios para el ensamblaje y desensamble del equipo de
+                cómputo, instalación y formateo del sistema operativo.
+              </li>
+              <li>
+                Coordiné talleres extracurriculares sobre los conocimientos y
+                bases necesarios para el aprendizaje de HTML5, CSS3 y JavaScript
+                permitirá construir sitios web desde cero y desarrollar
+                aplicaciones web interactivas.
+              </li>
+            </ul>
+          </div>
+
+          <div class="timeline-item" id="item4">
+            <div class="circlet"></div>
+            <div class="date">DICIEMBRE 2022</div>
+            <div class="company">UAnorte</div>
+            <div class="job-title">Coordinador de Gestión TI - Presencial</div>
+            <div class="description">Corporación Universitaria</div>
+            <ul class="responsibilities">
+              <li>
+                Administración de la Plataforma Q10 que agrupa la gestión
+                académica y financiera de la institución.
+              </li>
+              <li>
+                Realizar capacitaciones a docentes y estudiantes del manejo de
+                Q10 y Microsoft Teams.
+              </li>
+              <li>
+                Desarrollé las tareas de aplicaciones de las redes dando de alta
+                a usuarios, abriendo cuentas de email, restableciendo
+                contraseñas, etc.
+              </li>
+              <li>
+                Incorporar los equipos a la red. Estos pueden ser ordenadores,
+                impresoras, centralitas, etc.
+              </li>
+              <li>
+                Supervisión de que el sistema funcione correctamente y así mismo
+                resolviendo las incidencias de los usuarios de los problemas que
+                surgen
+              </li>
+              <li>
+                Gestionar la dotación del equipamiento, tanto de hardware como
+                de software.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------- ABOUT BOX ---------------- -->
+      <section class="section" id="about">
+        <h1 class="section__header">Sobre mí</h1>
+        <div class="row">
+          <div class="col">
+            <div class="about-info">
+              <p>
+                Soy un desarrollador frontend y diseñador UX/UI apasionado por
+                crear experiencias digitales memorables. Cuento con Experiencia
+                trabajando con sistemas de gestión de contenido (CMS) como
+                WordPress, así como en programación con Python, JavaScript y
+                React. En diseño UX/UI, utilizo Figma para la creación de
+                interfaces intuitivas y funcionales. Además, tengo experiencia
+                trabajando bajo metodologías ágiles como Scrum, lo que me
+                permite colaborar eficientemente en equipos multidisciplinarios
+                y asegurar entregas iterativas de alto valor.
+              </p>
+              <div class="about-btn">
+                <a
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1g_NbxkpTDGVssKKsw4Qweyepi5cGm1W8/view?usp=drive_link"
+                >
+                  <button class="btn">
+                    Descargar CV <i class="uil uil-import"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skills">
+              <h2 class="skills__subtitle">Habilidades</h2>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-html5 skills__icon"></i>
+                  <span class="skills__name">HTML5</span>
+                </div>
+                <div class="skills__bar skills__html"></div>
+                <div>
+                  <span class="skills__percentage">95%</span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-css3 skills__icon"></i>
+                  <span class="skills__name">CSS3</span>
+                </div>
+                <div class="skills__bar skills__css"></div>
+                <div>
+                  <span class="skills__percentage">85%</span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-javascript skills__icon"></i>
+                  <span class="skills__name">JAVASCRIPT</span>
+                </div>
+                <div class="skills__bar skills__js"></div>
+                <div>
+                  <span class="skills__percentage">65%</span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxs-paint skills__icon"></i>
+                  <span class="skills__name">UX/UI</span>
+                </div>
+                <div class="skills__bar skills__ux"></div>
+                <div>
+                  <span class="skills__percentage">85%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------- CONTACT BOX ---------------- -->
+
+      <section class="section" id="contact">
+        <h2 class="section__header">¡Hablemos!</h2>
+        <p class="section__description">
+          Te invito a conectar y explorar oportunidades de colaboración en mi
+          portafolio personal.
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="img">
+              <img src="/assets/images/img-contact.png" alt="img-contact" />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="contact-info">
+              <h2>Contáctame <i class="uil uil-corner-right-down"></i></h2>
+              <a
+                id="text-contact"
+                target="_blank"
+                href="mailto:jaivercriado@gmail.com"
+                ><i class="uil uil-envelope"></i>jaivercriado@gmail.com</a
+              >
+              <a id="text-contact" target="_blank" href="https://wa.link/bgsggm"
+                ><i class="uil uil-whatsapp"></i>+57 321 941 7942</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+      <div class="top-footer">
+        <p>Jaiver Criado .</p>
+      </div>
+      <div class="footer-social-icons">
+        <a
+          target="_blank"
+          href="https://www.instagram.com/jaiver18?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          ><div class="icon"><i class="uil uil-instagram"></i></div
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/jaiver-orlando-criado-arias-9ba704177/"
+          ><div class="icon"><i class="uil uil-linkedin-alt"></i></div
+        ></a>
+        <a target="_blank" href="https://github.com/JaiverCriado"
+          ><div class="icon"><i class="uil uil-github-alt"></i></div
+        ></a>
+      </div>
+      <div class="bottom-footer">
+        <p>
+          &copy; 2025 | Jaiver Orlando Criado Arias - Casi todos los derechos
+          resevados
+        </p>
+      </div>
+    </footer>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
